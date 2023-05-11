@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message TopLevelMessage {
+  string stringField = 1;
+  int32 intField = 2;
+  int64 longField = 3;
+  string bigStringField = 4;
+  map<string, SubMessage> mapField = 5;
+}
+
+message SubMessage {
+  string str = 1;
+}
